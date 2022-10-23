@@ -85,6 +85,7 @@ img {
 .section-title {
     position: relative;
     margin: 35px 5px 35px 5px; 
+    font-size: 220%;
 }
 
  
@@ -111,10 +112,12 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    font-size: 110%;
 }
 
 .activity-img {
-    max-width: 100px;
+    max-width: 130px;
+    margin-bottom: 1.4rem;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
     /*code below for the Enlarge on Hover*/ 
@@ -188,7 +191,7 @@ section h3:before {
 /* Stylink anchors in sections */
 section a {
 	text-transform: uppercase;
-	font-size: 26px;
+	font-size: 2rem;
 	text-decoration: none;
 	color: white;
 }
@@ -200,7 +203,7 @@ a.more {
     background-repeat: no-repeat;
 	padding-right: 34px;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 1.3rem;
 	text-decoration: none;
 	color: white;
 }

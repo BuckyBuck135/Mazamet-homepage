@@ -50,7 +50,7 @@ img {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 80%;
+    min-height: 80%;
 }
 
 /*for the B&W filter effect */
@@ -61,7 +61,8 @@ img {
 #title {
     color: white;
     text-shadow: 0 0 50px black;
-    font-size: 600%;
+    font-size: clamp(2rem, 1rem + 10vw, 5rem);
+    /* font-size: 600%; */
     /* font-size: 8vw; */
     /* font-size: 4.8rem; */
     margin: 0px 5px 20px 5px;
@@ -100,11 +101,20 @@ img {
 
 }
 
-/* contains all the items */
+/* contains all the items
 #container {
     display: flex;
-    column-gap: 45px;
+    column-gap: 2em;
     padding: 5px 15px;
+} */
+
+@media (min-width: 80em) {
+    /* contains all the items */
+    #container {
+    display: flex;
+    column-gap: 2em;
+    padding: 5px 15px;
+}
 }
 
 /* Individual (activity) items */
@@ -191,7 +201,7 @@ section h3:before {
 /* Stylink anchors in sections */
 section a {
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 250%;
 	text-decoration: none;
 	color: white;
 }
@@ -203,7 +213,7 @@ a.more {
     background-repeat: no-repeat;
 	padding-right: 34px;
 	text-transform: uppercase;
-	font-size: 1.3rem;
+	font-size: 150%;
 	text-decoration: none;
 	color: white;
 }
